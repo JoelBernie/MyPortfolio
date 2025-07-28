@@ -1,35 +1,73 @@
-<html>
-  <head>
-    <title>Your Name</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Joel Bernie R. Timog</h1>
-      <p>Aspiring IT Support Staff & Developer</p>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Page Example</title>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m currently learning web development. I enjoy solving technical issues and building small projects to improve my skills.</p>
-    </section>
+  <!-- fullPage.js CSS from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" />
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Simple Calculator</strong> – Built using HTML & JS</li>
-        <li><strong>Resume Page</strong> – HTML/CSS version of my resume</li>
-      </ul>
-    </section>
+  <style>
+    /* Set default margin/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>HTML, CSS, Python, C++, Excel, Word</p>
-    </section>
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+    }
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: yourname@example.com</p>
-    </section>
-  </body>
+    /* Style each section */
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: white;
+    }
+
+    /* Different background for each section */
+    #section1 { background-color: #1abc9c; }  /* Teal */
+    #section2 { background-color: #3498db; }  /* Blue */
+    #section3 { background-color: #9b59b6; }  /* Purple */
+  </style>
+</head>
+<body>
+
+  <!-- fullPage container -->
+  <div id="fullpage">
+    <!-- Section 1 -->
+    <div class="section" id="section1">
+      Welcome to My Website
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" id="section2">
+      About Me
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section" id="section3">
+      Contact
+    </div>
+  </div>
+
+  <!-- fullPage.js JS from CDN -->
+  <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+
+  <script>
+    // Initialize fullPage.js
+    new fullpage('#fullpage', {
+      autoScrolling: true,   // enables smooth scroll
+      navigation: true,      // show dots on the right
+      anchors: ['home', 'about', 'contact'], // optional: for linking
+      navigationTooltips: ['Home', 'About', 'Contact'], // hover tooltips
+      showActiveTooltip: true
+    });
+  </script>
+</body>
 </html>
