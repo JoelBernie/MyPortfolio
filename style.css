@@ -1,21 +1,25 @@
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
-section {
-  padding: 2rem;
-  margin: auto;
-  max-width: 800px;
-  background: white;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
+    /* Set default margin/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    /* Style each section */
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: white;
+    }
+
+    /* Different background for each section */
+    #section1 { background-color: #1abc9c; }  /* Teal */
+    #section2 { background-color: #3498db; }  /* Blue */
+    #section3 { background-color: #9b59b6; }  /* Purple */
