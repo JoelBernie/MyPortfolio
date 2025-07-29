@@ -20,7 +20,6 @@
     }
 
     /* Different background for each section */
-    #section1 { background-color: #1abc9c; }  /* Teal */
     #section2 { background-color: #3498db; }  /* Blue */
     #section3 { background-color: #9b59b6; }  /* Purple */
 
@@ -30,21 +29,22 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .profile-img {
-  width: 60vw;
-  max-width: 280px;
-  height: auto;
-  border-radius: 50%;
+  width: 80vw;
+  max-width: 360px;
+  height: 80vw;
+  max-height: 360px;
+  border-radius: 100%;
   border: 4px solid white;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-#about h1 {
+#section1 h1 {
   font-size: 2rem;
   margin: 0;
   padding: 0;
